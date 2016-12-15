@@ -26,4 +26,5 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.0.0'
     testCompile 'junit:junit:4.12'
+    compile 'com.rmtheis:tess-two:6.1.1'
 }

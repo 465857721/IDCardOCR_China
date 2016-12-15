@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <com.kingsoft.idcardocr_china.idcardocr.PreviewBorderView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/borderview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        app:tipTextSize="16dp"
+        />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/carmer_back"/>
+
+    <LinearLayout
+        android:id="@+id/linearlaout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@mipmap/open_falshlight"
+            android:textColor="#ffffffff"/>
+
+        <TextView
+
+            android:id="@+id/tv_openlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开闪光灯"
+            android:textColor="#ffffffff"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
