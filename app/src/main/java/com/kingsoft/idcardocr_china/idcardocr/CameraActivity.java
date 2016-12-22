@@ -59,6 +59,7 @@ public class CameraActivity extends Activity implements SurfaceHolder.Callback, 
         baseApi = new TessBaseAPI();
 
         baseApi.init(sdPath, "eng");
+        baseApi.setVariable("tessedit_char_whitelist", "0123456789Xx");
 //        baseApi.
         setContentView(R.layout.activity_camera);
         tv_lightstate = (TextView) findViewById(R.id.tv_openlight);
