@@ -245,38 +245,9 @@ public class CameraActivity extends Activity implements SurfaceHolder.Callback, 
         String text = baseApi.getUTF8Text();
         baseApi.clear();
 //        baseApi.end();
-        return replaceErrorChar(text);
+        return text;
     }
 
-    private String replaceErrorChar(String id) {
-
-        id = id.replaceAll("[\\p{Punct}\\p{Space}]+", "");
-        id = id.replace("i", "1");
-        id = id.replace("I", "1");
-        id = id.replace("l", "1");
-        id = id.replace("\\", "1");
-        id = id.replace("|", "1");
-        id = id.replace("/", "1");
-        id = id.replace("l", "1");
-        id = id.replace("z", "2");
-        id = id.replace("￠", "2");
-        id = id.replace("ʒ", "3");
-        id = id.replace("z", "2");
-        id = id.replace("S", "5");
-        id = id.replace("s", "5");
-        id = id.replace("b", "6");
-        id = id.replace("a", "8");
-        id = id.replace("B", "8");
-        id = id.replace("g", "9");
-        id = id.replace("G", "0");
-        id = id.replace("D", "0");
-        id = id.replace("o", "0");
-        id = id.replace("O", "0");
-        id = id.replace("U", "0");
-
-
-        return id;
-    }
 
     @Override
     public void onBackPressed() {
