@@ -3,7 +3,7 @@
 # Usage
 demo主要提供思路，通过摄像头取景，预览裁剪，ocr识别.
 # ScreenShots
-![] (https://github.com/465857721/IDCardOCR_China/blob/master/ScreenShots/device-2016-12-24-095238-small.jpg)
+ ![image](https://github.com/465857721/IDCardOCR_China/blob/master/ScreenShots/device-2016-12-24-095238-small.jpg)
 # TODO
 - 姓名ocr识别
 - 民族识别
